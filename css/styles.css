@@ -218,3 +218,51 @@ footer p, footer p a {
   color: #4CAF50;
   //background-color: #f1f1f1;
 }
+
+@media screen and (max-width: 800px) {
+  #navbar {
+    position: initial;
+    /* border: 1px red solid; */
+  }
+
+  #main-doc {
+    /*display: grid;
+    grid-template-columns: 1fr 4fr;*/
+    margin: 0;
+  }
+
+  #topic {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #topic img {
+    justify-self: end;
+  }
+
+  #topic h1 {
+    justify-self: start;
+  }
+
+  .section-container {
+    width: calc(100% - 20px);
+    padding: 0 10px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-links .nav-link {
+    display: inline-block;
+    padding: 5px 0 ;
+    text-align: center;
+  }
+
+  .nav-links .nav-link:hover, .nav-active {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+}

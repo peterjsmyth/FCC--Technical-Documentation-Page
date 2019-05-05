@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>FCC: Technical Documentation project</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:400,600,700,800|Source+Code+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script type="text/javascript" src="./scripts/main.js"></script>
+
+  </head>
+  <body>
+    <main id="main-doc">
+      <i id='scrollTopBtn' title='Scroll to Top' class="fas fa-arrow-alt-circle-up"></i>
+      <!--*********************************************************** Navbar -->
+      <nav id="navbar">
+
+        <header id="topic">
+          <img src="https://res.cloudinary.com/du97bgpi3/image/upload/v1556954203/FreeCodeCamp/Tech%20Document/python.sh-600x600_hlx4jm.png" alt="python logo">
+          <h1>python</h1>
+        </header>
+
+        <div class="nav-links">
+          <a class="nav-link scroll nav-active top" href="#Introduction">Intro</a>
+          <a class="nav-link scroll" href="#Python_Getting_Started">Get Started</a>
+          <a class="nav-link scroll" href="#Python_Syntax">Syntax</a>
+          <a class="nav-link scroll" href="#Python_Variables">Variables</a>
+          <a class="nav-link scroll" href="#Python_Numbers">Numbers</a>
+        </div>
+
+
+      </nav>
+      <div class="section-container">
+        <!--********************************************************* Sections -->
+        <!--------------------------------- Section One ------------------------->
+        <section id='Introduction' class="main-section">
+          <header>
+            <h2>Introduction</h2>
+          </header>
+          <article class="page-info">
+            <h3>What is Python?</h3>
+            <p>Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.</p>
+            <p>It is used for:</p>
+            <ul>
+              <li>web development (server-side),</li>
+              <li>software development,</li>
+              <li>mathematics,</li>
+              <li>system scripting.</li>
+            </ul>
+            <h3>What can Python do?</h3>
+            <ul>
+              <li>Python can be used on a server to create web applications.</li>
+              <li>Python can be used alongside software to create workflows.</li>
+              <li>Python can connect to database systems. It can also read and modify files.</li>
+              <li>Python can be used to handle big data and perform complex mathematics.</li>
+              <li>Python can be used for rapid prototyping, or for production-ready software development.</li>
+            </ul>
+            <h3>Why Python?</h3>
+              <ul>
+                <li>Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).</li>
+                <li>Python has a simple syntax similar to the English language.</li>
+                <li>Python has syntax that allows developers to write programs with
+                  fewer lines than some other programming languages.</li>
+                <li>Python runs on an interpreter system, meaning that code can be
+                  executed as soon as it is written. This means that prototyping can
+                  be very quick.</li>
+                <li>Python can be treated in a procedural way, an object-orientated
+                  way or a functional way.</li>
+              </ul>
+            <h3>Good to know</h3>
+            <ul>
+              <li>The most recent major version of Python is Python 3, which we shall
+                be using in this tutorial. However, Python 2, although not being
+                updated with anything other than security updates, is still quite popular.</li>
+              <li>In this tutorial Python will be written in a text editor. It is
+                possible to write Python in an Integrated Development Environment,
+                such as Thonny, Pycharm, Netbeans or Eclipse which are particularly
+                useful when managing larger collections of Python files.</li>
+            </ul>
+            <h3>Python Syntax compared to other programming languages</h3>
+            <ul>
+              <li>Python was designed for readability, and has some similarities to
+                the English language with influence from mathematics.</li>
+              <li>Python uses new lines to complete a command, as opposed to other
+                programming languages which often use semicolons or parentheses.</li>
+              <li>Python relies on indentation, using whitespace, to define scope;
+                such as the scope of loops, functions and classes. Other programming
+                languages often use curly-brackets for this purpose.</li>
+            </ul>
+          </article>
+        </section>
+        <!--------------------------------- Section Two ------------------------->
+        <section id='Python_Getting_Started' class="main-section">
+          <header>
+            <h2>Python Getting Started</h2>
+          </header>
+          <article class="page-info">
+            <h3>Python Install</h3>
+            <p>Many PCs and Macs will have python already installed.</p>
+            <p>To check if you have python installed on a Windows PC,
+              search in the start bar for Python or run the following
+              on the Command Line (cmd.exe):</p>
+            <div class="code-box">
+              <div class="code-box-cmd">
+                <code class="code-cmd">C:\Users\Your Name>python --version</code>
+              </div>
+            </div>
+            <p>To check if you have python installed on a Linux or Mac, then on
+              linux open the command line or on Mac open the Terminal and type:</p>
+            <div class="code-box">
+              <div class="code-box-cmd">
+                <code class="code-cmd">python --version</code>
+              </div>
+            </div>
+            <p>If you find that you do not have python installed on your computer,
+              then you can download it for free from the following website:
+              <br /><a href="https://www.python.org/"
+              target="_blank">https://www.python.org/</a></p>
+            <hr>
+            <h3>Python Quickstart</h3>
+            <p>Python is an interpreted programming language, this means that as a
+              developer you write Python (.py) files in a text editor and then put
+              those files into the python interpreter to be executed.</p>
+            <p>The way to run a python file is like this on the command line:</p>
+            <div class="code-box">
+              <div class="code-box-cmd">
+                <code class="code-cmd">C:\Users\Your Name>python helloworld.py</code>
+              </div>
+            </div>
+            <p>Where "helloworld.py" is the name of your python file.</p>
+            <p>Let's write our first Python file, called helloworld.py, which can
+              be done in any text editor.</p>
+            <div class="code-box">
+              <p>helloworld.py</p>
+              <div class="code-box-python">
+                <code class="code-python"><span class='method-text'>print</span>(<span class='string-text'>"Hello, World!"</span>)</code>
+              </div>
+            </div>
+            <p>Simple as that. Save your file. Open your command line, navigate to
+              the directory where you saved your file, and run:</p>
+            <div class="code-box">
+              <div class="code-box-cmd">
+                <code class="code-cmd">C:\Users\Your Name>python helloworld.py</code>
+              </div>
+            </div>
+            <p>The output should read:</p>
+            <div class="code-box">
+              <div class="code-box-cmd">
+                <code class="code-cmd">Hello, World!</code>
+              </div>
+            </div>
+            <hr>
+            <h3>The Python Command Line</h3>
+            <p>To test a short amount of code in python sometimes it is quickest and
+              easiest not to write the code in a file. This is made possible
+              because Python can be run as a command line itself.</p>
+            <p>Type the following on the Windows, Mac or Linux command line:</p>
+            <div class="code-box">
+              <div class="code-box-cmd">
+                <code class="code-cmd">C:\Users\Your Name>python</code>
+              </div>
+            </div>
+            <p>From there you can write any python, including our hello world example
+              from earlier in the tutorial:</p>
+            <div class="code-box">
+              <div class="code-box-cmd">
+                <code class="code-cmd-system">C:\Users\<em>Your Name</em>>python</code><br />
+                <code class="code-cmd-system">Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017,
+                  06:04:45) [MSC v.1900 32 bit (Intel)] on win32</code><br />
+                <code class="code-cmd-system">Type "help", "copyright", "credits" or
+                  "license" for more information.</code><br />
+                <code class="code-cmd">>>> print("Hello, World!")</code>
+              </div>
+            </div>
+            <p>Which will write "Hello, World!" in the command line:</p>
+            <div class="code-box">
+              <div class="code-box-cmd">
+                <code class="code-cmd-system">C:\Users\<em>Your Name</em>>python</code><br />
+                <code class="code-cmd-system">Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017,
+                  06:04:45) [MSC v.1900 32 bit (Intel)] on win32</code><br />
+                <code class="code-cmd-system">Type "help", "copyright", "credits" or
+                  "license" for more information.</code><br />
+                <code class="code-cmd-system">>>> print("Hello, World!")</code><br />
+                <code class="code-cmd">Hello, World!</code>
+              </div>
+            </div>
+            <p>Whenever you are done in the python command line, you can simply
+              type the following to quit the python command line interface:</p>
+            <div class="code-box">
+              <div class="code-box-cmd">
+                <code class="code-cmd">exit()</code>
+              </div>
+            </div>
+          </article>
+        </section>
+        <!----------------------------- Section Three ------------------------->
+        <section id='Python_Syntax' class="main-section">
+          <header>
+            <h2>Python Syntax</h2>
+          </header>
+          <h3>Execute Python Syntax</h3>
+          <p>As we learned in the previous page, Python syntax can be executed by
+            writing directly in the Command Line:</p>
+          <div class="code-box">
+            <div class="code-box-cmd">
+              <code class="code-cmd">>>> print("Hello, World!")</code><br />
+              <code class="code-cmd">Hello, World!</code>
+            </div>
+          </div>
+          <p>Or by creating a python file on the server, using the .py file extension,
+            and running it in the Command Line:</p>
+          <div class="code-box">
+            <div class="code-box-cmd">
+              <code class="code-cmd">C:\Users\<em>Your Name</em>>python myfile.py</code>
+            </div>
+          </div>
+          <hr>
+          <h3>Python Indentations</h3>
+          <p>Where in other programming languages the indentation in code is for
+            readability only, in Python the indentation is very important.</p>
+          <p>Python uses indentation to indicate a block of code.</p>
+          <div class="code-box">
+            <h4>Example</h4>
+            <div class="code-box-python">
+              <code class="code-python"><span class='method-text'>if</span> <span class='number-text'>5</span> > <span class='number-text'>2</span>:</code><br />
+              <code class="code-python">&nbsp&nbsp<span class='method-text'>print</span>(<span class="string-text">"Five is greater than two!"</span>)</code>
+            </div>
+          </div>
+          <p>Python will give you an error if you skip the indentation:</p>
+          <div class="code-box-error">
+            <h4>Example</h4>
+            <div class="code-box-python">
+              <code class="code-python"><span class='method-text'>if</span> <span class='number-text'>5</span> > <span class='number-text'>2</span>:</code><br />
+              <code class="code-python"><span class='method-text'>print</span>(<span class="string-text">"Five is greater than two!"</span>)</code>
+            </div>
+            <div class="code-box-cmd">
+              <code class='code-cmd'>C:\Users\My Name>python demo_indentation_test.py</code><br />
+              <code class='code-cmd'>&nbsp&nbspFile "demo_indentation_test.py", line 2</code><br />
+              <code class='code-cmd'>&nbsp&nbsp&nbsp&nbspprint("Five is greater than two!")</code><br />
+              <code class='code-cmd'>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp^</code><br />
+              <code class='code-cmd'>IndentationError: expected an indented block</code>
+            </div>
+          </div>
+          <hr>
+          <h3>Comments</h3>
+          <p>Python has commenting capability for the purpose of in-code documentation.</p>
+          <p>Comments start with a #, and Python will render the rest of the line as a comment:</p>
+          <div class="code-box">
+            <h4>Example</h4>
+            <p>Comments in Python:</p>
+            <div class="code-box-python">
+              <code class="code-python"><span class="comment-text">#This is a comment.</span></code><br />
+              <code class="code-python"><span class='method-text'>print</span>("Hello, World!")</code>
+            </div>
+          </div>
+          <h3>Docstrings</h3>
+          <p>Python also has extended documentation capability, called docstrings.</p>
+          <p>Docstrings can be one line, or multiline.</p>
+          <p>Python uses triple quotes at the beginning and end of the docstring:</p>
+          <div class="code-box">
+            <h4>Example</h4>
+            <p>Docstrings are also comments:</p>
+            <div class="code-box-python">
+              <code class="code-python"><span class="string-text">"""This is a </span></code><br />
+              <code class="code-python"><span class="string-text">multiline docstring."""</span></code><br />
+              <code class="code-python"><span class='method-text'>print</span>("Hello, World!")</code>
+            </div>
+          </div>
+        </section>
+        <!--------------------------------- Section Four------------------------->
+        <section id='Python_Variables' class="main-section">
+          <header>
+            <h2>Python Variables</h2>
+          </header>
+          <h3>Creating Variables</h3>
+          <p>Unlike other programming languages, Python has no command for declaring
+            a variable.</p>
+          <p>A variable is created the moment you first assign a value to it.</p>
+          <div class="code-box">
+            <h4>Example</h4>
+            <div class="code-box-python">
+              <code class="code-python">x = <span class="number-text">5</span></code><br />
+              <code class="code-python">y = <span class="string-text">"John"</span></code><br />
+              <code class="code-python"><span class='method-text'>print</span>(x)</code><br />
+              <code class="code-python"><span class='method-text'>print</span>(y)</code>
+            </div>
+          </div>
+          <p>Variables do not need to be declared with any particular type and can
+            even change type after they have been set.</p>
+          <div class="code-box">
+            <h4>Example</h4>
+            <div class="code-box-python">
+              <code class="code-python">x = <span class="number-text">4</span> <span class="comment-text"># x is of type int</span></code><br />
+              <code class="code-python">x = <span class="string-text">"Sally"</span> <span class="comment-text"># x is now of type str</span></code><br />
+              <code class="code-python"><span class='method-text'>print</span>(x)</code>
+            </div>
+          </div>
+          <hr>
+          <h3>Variable Names</h3>
+          <ul>
+            <li>A variable name must start with a letter or the underscore character</li>
+            <li>A variable name cannot start with a number</li>
+            <li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )</li>
+            <li>Variable names are case-sensitive (age, Age and AGE are three different variables)</li>
+          </ul>
+          <div class="notebox">
+            <p>Remember that variables are case-sensitive</p>
+          </div>
+          <hr>
+          <h3>Output Variables</h3>
+          <p>The Python <span class="crimson-text gray-bg">&nbspprint&nbsp</span>
+            statement is often used to output variables.</p>
+          <p>To combine both text and a variable, Python uses the
+            <span class="crimson-text gray-bg">&nbsp+&nbsp</span> character:</p>
+          <div class="code-box">
+            <h4>Example</h4>
+            <div class="code-box-python">
+              <code class="code-python">x = <span class="string-text">"awesome"</span></code><br />
+              <code class="code-python"><span class='method-text'>print</span>(<span class="string-text">"Python is "</span> + x)</code>
+            </div>
+          </div>
+          <p>You can also use the <span class='crimson-text gray-bg'>&nbsp+&nbsp</span> character to add a variable to another variable:</p>
+          <div class="code-box">
+            <h4>Example</h4>
+            <div class="code-box-python">
+              <code class="code-python">x = <span class="string-text">"Python is "</span></code><br />
+              <code class="code-python">y = <span class="string-text">"awesome"</span></code><br />
+              <code class="code-python">z =  x + y</code><br />
+              <code class="code-python"><span class='method-text'>print</span>(z)</code>
+            </div>
+          </div>
+          <p>For numbers, the <span class='crimson-text gray-bg'>&nbsp+&nbsp</span> character works as a mathematical operator:</p>
+          <div class="code-box">
+            <h4>Example</h4>
+            <div class="code-box-python">
+              <code class="code-python">x = <span class="number-text">5</span></code><br />
+              <code class="code-python">y = <span class="number-text">10</span></code><br />
+              <code class="code-python"><span class='method-text'>print</span>(x + y)</code>
+            </div>
+          </div>
+          <p>If you try to combine a string and a number, Python will give you an error:</p>
+          <div class="code-box-error">
+            <h4>Example</h4>
+            <div class="code-box-python">
+              <code class="code-python">x = <span class="number-text">5</span></code><br />
+              <code class="code-python">y = <span class="string-text">"John"</span></code><br />
+              <code class="code-python"><span class='method-text'>print</span>(x + y)</code>
+            </div>
+            <div class="code-box-cmd">
+              <code class="code-cmd">C:\Users\My Name>python demo_variables_test.py</code><br />
+              <code class="code-cmd">TypeError: unsupported operand type(s) for +: 'int' and 'str'</code>
+            </div>
+          </div>
+        </section>
+        <!--------------------------------- Section Four------------------------->
+        <section id='Python_Numbers' class="main-section">
+          <header>
+            <h2>Python Numbers</h2>
+          </header>
+          <h3>Python Numbers</h3>
+          <p>There are three numeric types in Python:</p>
+          <ul>
+            <li>int</li>
+            <li>float</li>
+            <li>complex</li>
+          </ul>
+          <p>Variables of numeric types are created when you assign a value to them:</p>
+          <div class="code-box">
+            <h4>Example</h4>
+            <div class="code-box-python">
+              <code class="code-python">x = <span class="number-text">1</span><span class="comment-text">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp# int</span></code><br />
+              <code class="code-python">y = <span class="number-text">2.8</span><span class="comment-text">&nbsp&nbsp# float</span></code><br />
+              <code class="code-python">y = <span class="number-text">1j</span><span class="comment-text">&nbsp&nbsp&nbsp&nbsp&nbsp# complex</span></code>
+            </div>
+          </div>
+          <p>To verify the type of any object in Python, use the <span class='crimson-text gray-bg'>&nbsptype()&nbsp</span> function:</p>
+          <div class="code-box">
+            <h4>Example</h4>
+            <div class="code-box-python">
+              <code class="code-python"><span class="method-text">print</span>(<span class="method-text">type</span>(x))</code><br />
+              <code class="code-python"><span class="method-text">print</span>(<span class="method-text">type</span>(y))</code><br />
+              <code class="code-python"><span class="method-text">print</span>(<span class="method-text">type</span>(z))</code><br />
+            </div>
+            <div class="code-box-cmd">
+              <code class="code-cmd">C:\Users\My Name>python demo_numbers.py</code><br />
+              <code class="code-cmd">&ltclass 'int'&gt</code><br />
+              <code class="code-cmd">&ltclass 'float'&gt</code><br />
+              <code class="code-cmd">&ltclass 'complex'&gt</code>
+            </div>
+          </div>
+          <hr>
+          <h3>Int</h3>
+          <p>Int, or integer, is a whole number, positive or negative, without decimals, of unlimited length.</p>
+          <div class="code-box">
+            <h4>Example</h4>
+            <p>Integers:</p>
+            <div class="code-box-python">
+              <code class="code-python">x = <span class="number-text">1</span></code><br />
+              <code class="code-python">x = <span class="number-text">35656222554887711</span></code><br />
+              <code class="code-python">x = -<span class="number-text">3255522</span></code><br /><br />
+              <code class="code-python"><span class="method-text">print</span>(<span class="method-text">type</span>(x))</code><br />
+              <code class="code-python"><span class="method-text">print</span>(<span class="method-text">type</span>(y))</code><br />
+              <code class="code-python"><span class="method-text">print</span>(<span class="method-text">type</span>(z))</code><br />
+            </div>
+            <div class="code-box-cmd">
+              <code class="code-cmd">C:\Users\My Name>python demo_numbers_int.py</code><br />
+              <code class="code-cmd">&ltclass 'int'&gt</code><br />
+              <code class="code-cmd">&ltclass 'int'&gt</code><br />
+              <code class="code-cmd">&ltclass 'int'&gt</code>
+            </div>
+          </div>
+          <hr>
+          <h3>Float</h3>
+          <p>Float, or "floating point number" is a number, positive or negative, containing one or more decimals.</p>
+          <div class="code-box">
+            <h4>Example</h4>
+            <p>Floats:</p>
+            <div class="code-box-python">
+              <code class="code-python">x = <span class="number-text">1.1</span></code><br />
+              <code class="code-python">x = <span class="number-text">1.0</span></code><br />
+              <code class="code-python">x = -<span class="number-text">35.59</span></code><br /><br />
+              <code class="code-python"><span class="method-text">print</span>(<span class="method-text">type</span>(x))</code><br />
+              <code class="code-python"><span class="method-text">print</span>(<span class="method-text">type</span>(y))</code><br />
+              <code class="code-python"><span class="method-text">print</span>(<span class="method-text">type</span>(z))</code><br />
+            </div>
+            <div class="code-box-cmd">
+              <code class="code-cmd">C:\Users\My Name>python demo_numbers_float.py</code><br />
+              <code class="code-cmd">&ltclass 'float'&gt</code><br />
+              <code class="code-cmd">&ltclass 'float'&gt</code><br />
+              <code class="code-cmd">&ltclass 'float'&gt</code>
+            </div>
+          </div>
+          <p>Float can also be scientific numbers with an "e" to indicate the power of 10.</p>
+          <div class="code-box">
+            <h4>Example</h4>
+            <p>Floats:</p>
+            <div class="code-box-python">
+              <code class="code-python">x = <span class="number-text">35e3</span></code><br />
+              <code class="code-python">x = <span class="number-text">12E4</span></code><br />
+              <code class="code-python">x = -<span class="number-text">87.7e100</span></code><br /><br />
+              <code class="code-python"><span class="method-text">print</span>(<span class="method-text">type</span>(x))</code><br />
+              <code class="code-python"><span class="method-text">print</span>(<span class="method-text">type</span>(y))</code><br />
+              <code class="code-python"><span class="method-text">print</span>(<span class="method-text">type</span>(z))</code><br />
+            </div>
+            <div class="code-box-cmd">
+              <code class="code-cmd">C:\Users\My Name>python demo_numbers_float2.py</code><br />
+              <code class="code-cmd">&ltclass 'float'&gt</code><br />
+              <code class="code-cmd">&ltclass 'float'&gt</code><br />
+              <code class="code-cmd">&ltclass 'float'&gt</code>
+            </div>
+          </div>
+          <hr>
+          <h3>Complex</h3>
+          <p>Complex numbers are written with a "j" as the imaginary part:</p>
+          <div class="code-box">
+            <h4>Example</h4>
+            <p>Complex:</p>
+            <div class="code-box-python">
+              <code class="code-python">x = <span class="number-text">3</span>+5j</code><br />
+              <code class="code-python">x = <span class="number-text">5j</span></code><br />
+              <code class="code-python">x = -<span class="number-text">5j</span></code><br /><br />
+              <code class="code-python"><span class="method-text">print</span>(<span class="method-text">type</span>(x))</code><br />
+              <code class="code-python"><span class="method-text">print</span>(<span class="method-text">type</span>(y))</code><br />
+              <code class="code-python"><span class="method-text">print</span>(<span class="method-text">type</span>(z))</code><br />
+            </div>
+            <div class="code-box-cmd">
+              <code class="code-cmd">C:\Users\My Name>python demo_numbers_float.py</code><br />
+              <code class="code-cmd">&ltclass 'complex'&gt</code><br />
+              <code class="code-cmd">&ltclass 'complex'&gt</code><br />
+              <code class="code-cmd">&ltclass 'complex'&gt</code>
+            </div>
+          </div>
+        </section>
+        <br />
+      </div>
+    </main>
+    <footer>
+      <p>Information supplied by <a href="https://www.w3schools.com/python/default.asp" target="_blank">w3schools<span class='w3schools-green'>.com</span></a></p>
+      <p>&copy Pete Smyth 2019</p>
+    </footer>
+  </body>
+</html>
